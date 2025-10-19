@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Maisoon | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">MM</div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-progress">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">MM</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle" onclick="toggleTheme()">
+                <div class="theme-slider">
+                    <div class="theme-slider-circle">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="animated-bg">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Mohammed Maisoon</h1>
+            <h2>Full Stack Developer</h2>
+            <p>Full Stack Developer with a passion for solving complex problems through elegant code solutions. I enjoy building applications from concept to deployment, ensuring both exceptional user experience and robust backend performance.</p>
+            
+            <div class="tech-stack">
+                <div class="tech-item">Python</div>
+                <div class="tech-item">Java</div>
+                <div class="tech-item">JavaScript</div>
+                <div class="tech-item">React</div>
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">HTML/CSS</div>
+                <div class="tech-item">MongoDB</div>
+                <div class="tech-item">MySQL</div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+                <a href="assets/MohammedMaisoon.pdf" class="btn btn-download" download="MohammedMaisoon.pdf">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile_pic.jpeg" alt="Mohammed Maisoon" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">MM</div>
+                </div>
+                <div class="about-text">
+                    <h3>Hello, I'm Mohammed Maisoon!</h3>
+                    <p>I'm currently working on end-to-end web applications with Python, Java, React, and modern databases. My passion lies in creating scalable, efficient solutions that solve real-world problems.</p>
+                    <p>I'm continuously learning about emerging technologies, design patterns, and software architecture. I believe in writing clean, maintainable code and following best practices in software development.</p>
+                    <p>Ask me about full-stack architecture, code optimization, and turning ideas into functional applications. Let's connect and build something amazing together!</p>
+                    
+                    <div class="about-social-links">
+                        <a href="https://www.linkedin.com/in/mohammed-maisoon-a98b5924b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn" class="social-circle">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MohammedMaisoon" target="_blank" title="GitHub" class="social-circle">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mmohammedmaisoon@gmail.com" target="_blank" title="Gmail" class="social-circle">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year">2022-2025</div>
+                    <div class="education-details">
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>The New College, University of Madras</h4>
+                        <p>Royapettah, Chennai - 600014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="section">
+        <div class="container">
+            <h2 class="section-title">Internship Experience</h2>
+            <div class="internship-timeline">
+                <div class="internship-item">
+                    <div class="internship-year">2024</div>
+                    <div class="internship-details">
+                        <h3>Full Stack Developer Intern</h3>
+                        <h4>Stepux Software Training and Job Assistance Center</h4>
+                        <p>Worked on developing web applications using React, Node.js, and MongoDB. Gained hands-on experience in Full Stack development and collaborative coding practices.</p>
+                        <div class="internship-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">Mysql</span>
+                            <span class="skill-tag">Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Angular</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">GraphQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Flutter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        Learning Management System
+                    </div>
+                    <div class="project-content">
+                        <h3>Learning Management System</h3>
+                        <p>A feature-rich Learning Management System with secure authentication (OTP verification), video course uploading, creator profiles with linking, custom playlists, content library, and search functionality.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Backend</span>
+                            <span class="project-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        Secure Task Platform
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Task Platform</h3>
+                        <p>Advanced anti-cheating platform with fullscreen enforcement, AI detection, clipboard blocking, DevTools monitoring, and comprehensive activity logging for secure exam administration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        Police Complaint Management
+                    </div>
+                    <div class="project-content">
+                        <h3>Police Complaint Management System</h3>
+                        <p>Web-based police complaint system enabling officers to register, track, and manage criminal cases with victim/suspect details, status updates, and secure authentication</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Payment API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="section stats">
+        <div class="container">
+            <h2 class="section-title">Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Hours Coding Weekly</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always excited to discuss new opportunities, collaborate on interesting projects, or just have a chat about technology and innovation.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <p>mmohammedmaisoon@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Location</h4>
+                            <p>Chennai, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Phone</h4>
+                            <p>+91 9342744081</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="contact-social-links">
+                        <a href="https://www.linkedin.com/in/mohammed-maisoon-a98b5924b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/MohammedMaisoon" target="_blank" title="GitHub" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:mmohammedmaisoon@gmail.com" target="_blank" title="Gmail" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Your Name
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Your Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i>
+                                Subject
+                            </label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment-alt"></i>
+                                Your Message
+                            </label>
+                            <textarea id="message" name="message" placeholder="Tell me more about your project or inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mohammed Maisoon. All rights reserved.</p>
+            <p>Built with passion and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
