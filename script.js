@@ -966,7 +966,7 @@ function addThemeToggle() {
 }
 
 // Initialize theme toggle
-document.addEventListener('DOMContentLoaded', addThemeToggle);
+// document.addEventListener('DOMContentLoaded', addThemeToggle);
 
 // Add contact form reset functionality
 function resetContactForm() {
