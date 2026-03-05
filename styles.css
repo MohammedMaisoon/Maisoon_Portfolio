@@ -398,11 +398,7 @@ body.light-theme .dot {
 }
 
 body.light-theme .hero {
-    background: 
-        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
-        var(--bg-primary);
+    background: linear-gradient(135deg, #6b73ff 0%, #9b6dff 30%, #b04db0 60%, #8b5cf6 100%);
 }
 
 body:not(.light-theme) .hero {
@@ -429,7 +425,7 @@ body:not(.light-theme) .hero {
 }
 
 body.light-theme .hero h1 {
-    background: linear-gradient(45deg, #2d3748, #4a5568);
+    background: linear-gradient(45deg, #1a1a2e, #2d3748);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -442,6 +438,10 @@ body.light-theme .hero h1 {
     animation: fadeInUp 1s ease 0.3s both;
 }
 
+body.light-theme .hero h2 {
+    color: #7ee8fa;
+}
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
@@ -450,6 +450,10 @@ body.light-theme .hero h1 {
     margin-right: auto;
     color: var(--text-secondary);
     animation: fadeInUp 1s ease 0.6s both;
+}
+
+body.light-theme .hero p {
+    color: rgba(255, 255, 255, 0.88);
 }
 
 .tech-stack {
@@ -475,6 +479,12 @@ body.light-theme .hero h1 {
     transform: translateY(-5px);
     background: rgba(0, 255, 255, 0.2);
     box-shadow: 0 10px 20px var(--shadow-color);
+}
+
+body.light-theme .tech-item {
+    background: rgba(15, 15, 20, 0.8);
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.6);
 }
 
 body.light-theme .tech-item:hover {
@@ -592,7 +602,7 @@ body.light-theme .btn-download::before {
 }
 
 body.light-theme .section-title {
-    background: linear-gradient(45deg, #2d3748, #4a5568);
+    background: linear-gradient(45deg, #3b82f6, #8b5cf6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -869,7 +879,7 @@ body.light-theme .skill-tag {
 }
 
 body.light-theme .skill-category h3 {
-    color: #2d3748;
+    color: #3b82f6;
 }
 
 .skill-list {
@@ -891,6 +901,7 @@ body.light-theme .skill-category h3 {
 
 body.light-theme .skill-list .skill-tag {
     background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+    color: #ffffff;
 }
 
 /* Projects Section */
