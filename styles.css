@@ -1703,9 +1703,11 @@ footer p {
         animation: none !important;
     }
 }
-/* --- Fix Hero Section Top Clipping on Mobile --- */
+/* --- Fix Hero Section Top & Bottom Spacing for Mobile --- */
 .hero {
-    padding-top: 100px !important; /* Forces top space so fixed header doesn't cover name */
+    padding-top: 80px !important;
+    padding-bottom: 2rem !important;
+    min-height: auto !important; /* Prevents height locking on smaller screens */
 }
 
 .nickname {
@@ -1714,7 +1716,15 @@ footer p {
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 130px !important; /* Extra top clearance specifically for mobile screens */
+        padding-top: 75px !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .hero-content p {
+        margin-bottom: 1rem !important; /* Slightly reduces paragraph spacing to fit all buttons */
+    }
+
+    .tech-stack {
+        margin-bottom: 1.2rem !important; /* Tightens tech tags list on mobile */
     }
 }
-
