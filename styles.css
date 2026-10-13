@@ -1703,11 +1703,11 @@ footer p {
         animation: none !important;
     }
 }
-/* --- Fix Hero Section Top & Bottom Spacing for Mobile --- */
+/* --- Fix Hero Section Spacing & Font Scaling for Mobile --- */
 .hero {
-    padding-top: 80px !important;
+    padding-top: 100px !important;
     padding-bottom: 2rem !important;
-    min-height: auto !important; /* Prevents height locking on smaller screens */
+    min-height: auto !important;
 }
 
 .nickname {
@@ -1716,15 +1716,27 @@ footer p {
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 75px !important;
+        padding-top: 110px !important; /* Clears top navbar completely */
         padding-bottom: 1.5rem !important;
     }
 
+    .hero-content h1 {
+        font-size: 1.8rem !important; /* Slightly reduces title height to save space */
+        line-height: 1.2 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .hero-content h2 {
+        font-size: 1.2rem !important;
+        margin-bottom: 0.8rem !important;
+    }
+
     .hero-content p {
-        margin-bottom: 1rem !important; /* Slightly reduces paragraph spacing to fit all buttons */
+        font-size: 0.95rem !important;
+        margin-bottom: 1rem !important;
     }
 
     .tech-stack {
-        margin-bottom: 1.2rem !important; /* Tightens tech tags list on mobile */
+        margin-bottom: 1rem !important;
     }
 }
